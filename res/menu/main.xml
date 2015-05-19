@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_scan"
+        android:orderInCategory="10"
+        android:showAsAction="always|withText"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/scan_beacon"/>
+
+    <item
+        android:id="@+id/action_discoverable"
+        android:orderInCategory="40"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/discoverable" />
+
+</menu>

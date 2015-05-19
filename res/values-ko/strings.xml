@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_section1">비컨 리스트</string>
+    <string name="title_section2">매크로 리스트</string>
+    <string name="title_section3">설정</string>
+    
+    <!-- Settings -->
+    <string name="action_settings">설정</string>
+    <string name="settings_background_service">백그라운드로 실행</string>
+    <string name="settings_scan_interval">스캔 간격</string>
+    <string name="settings_use_noti">Notification 사용</string>
+    <string name="settings_email_addr">이메일주소(Gmail)</string>
+    <string name="settings_email_addr_hint">aaa@gmail.com</string>
+    <string name="settings_email_pw">이메일 비밀번호</string>
+    
+    <!-- UI, Activity, Fragment -->
+    <string name="title_beacon">비컨</string>
+    <string name="title_macro">매크로</string>
+    <string name="title_ll_settings">설정</string>
+    
+    <string name="title_scan_classic">Classic Scan</string>
+    <string name="title_scan_ble">BLE Scan</string>
+    
+    <string name="title_make_macro">매크로 생성</string>
+    <string name="title_macro_conditions">조건 설정</string>
+    <string name="title_macro_name">매크로 이름</string>
+    <string name="title_macro_major">Major 코드</string>
+    <string name="title_macro_minor">Minor 코드</string>
+    <string name="title_macro_uuid">UUID</string>
+    <string name="title_macro_this_beacon">이 비컨이</string>
+    <string name="title_macro_distance">거리</string>
+    <string name="title_macro_works">할 일</string>
+    <string name="title_macro_work_type">예약할 작업</string>
+	<string name="title_macro_target">수신인</string>
+    <string name="title_macro_message">메시지</string>
+    <string name="title_macro_make">생성</string>
+    <string name="title_macro_edit">수정</string>
+    <string name="title_macro_options">매크로 설정</string>
+    <string name="title_macro_title">매크로 이름</string>
+    <string name="title_macro_enable">활성화</string>
+    <string name="title_back_to_list">리스트로</string>
+    <string name="title_beacon_name">비컨 이름</string>
+    <string name="title_beacon_already_remembered">*저장된 비컨: </string>
+    
+    <string name="title_spin_title_distance">거리를 선택하세요</string>
+    <string name="title_spin_title_work">예약할 작업을 선택하세요</string>
+    
+    <string name="title_stop_alarm">알람 중지!!</string>
+    
+    <string name="hint_type_email">이메일 주소</string>
+    <string name="hint_type_number">폰 번호</string>
+    <string name="hint_type_msg_id">수신인 아이디</string>
+    <string name="hint_type_uri">홈페이지 URL</string>
+    
+    <string name="error_type_device">UUID 혹은 Major/Minor 코드를 입력하세요</string>
+    <string name="error_select_distance">거리를 선택하세요</string>
+    <string name="error_select_what_todo">예약할 작업을 입력하세요</string>
+    <string name="error_type_destination">수신인을 설정하세요</string>
+    <string name="error_type_message">메시지를 입력하세요</string>
+    <string name="error_type_name">매크로 이름을 입력하세요</string>
+    <string name="error_exit_app">Back 키를 한번 더 누르시면 앱이 종료됩니다.</string>
+    
+	<string name="noti_title">매크로가 작동했습니다!</string>
+    
+    
+    <!--  Bluetooth -->
+    <string name="bt_title">Blue Wave</string>
+    
+    <string name="bt_state_init">초기화 중</string>
+    <string name="bt_state_wait">대기중.. (수동으로 장치 선택)</string>
+    <string name="bt_state_connect">연결중</string>
+    <string name="bt_state_connected">연결됨</string>
+    <string name="bt_state_error">에러</string>
+    
+    <string name="bt_not_enabled_leaving">블루투스가 꺼져 있습니다. 설정에서 블루투스를 활성화 하세요.</string>
+    <string name="bt_cmd_sending_error">전송 실패</string>
+    <string name="bt_ble_not_supported">이 장치는 Bluetooth LE를 지원하지 않습니다.</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">장치를 스캔하는 중입니다.</string>
+    <string name="select_device">연결할 장치를 선택하세요</string>
+    <string name="none_paired">페어링 된 장치가 없습니다.</string>
+    <string name="none_found">검색된 장치가 없습니다.</string>
+    <string name="title_paired_devices">페어링 된 장치들</string>
+    <string name="title_other_devices">기타 사용가능한 장치들</string>
+    <string name="button_scan">장치 스캔</string>
+
+    <!-- Dialog menu on List item -->
+    <string name="menu_make_macro_with_this">선택한 비컨으로 매크로 생성</string>
+    <string name="menu_make_macro_with_uuid">선택한 UUID로 매크로 생성</string>
+    <string name="menu_make_macro_with_major">선택한 Major/Minor 코드로 매크로 생성</string>
+    <string name="menu_remember_beacon">비컨 정보 저장</string>
+    <string name="menu_edit_beacon">정보 수정</string>
+    <string name="menu_delete_beacon">삭제</string>
+    <string name="menu_toggle_enabled">매크로 활성화/비활성화</string>
+    <string name="menu_edit_macro">매크로 수정</string>
+    <string name="menu_delete_macro">매크로 삭제</string>
+    
+    <!-- Options Menu -->
+    <string name="scan_beacon">비컨 스캔</string>
+    <string name="discoverable">Make\ndiscoverable</string>
+    
+    <!-- Arrays -->
+    <string-array name="array_macro_distance">
+        <item>## 거리 조건 선택</item>
+        <item>검색되지 않음</item>
+        <item>근접 (0.5m 이하)</item>
+        <item>가까움 (4m 이하)</item>
+        <item>멈 (검색 가능한 상태)</item>
+    </string-array>
+    
+    <string-array name="array_macro_works">
+        <item>## 예약할 작업</item>
+        <item>이메일 전송</item>
+        <item>SMS 전송</item>
+        <item>메시지 전송(미지원)</item>
+        <item>진동을 울림</item>
+        <item>경고음 재생</item>
+        <item>Notification으로 알림</item>
+        <item>벨 모드로 변경</item>
+        <item>진동 모드로 변경</item>
+        <item>Silent 모드로 변경</item>
+        <item>WiFi 를 활성화</item>
+        <item>WiFi 비 활성화</item>
+        <item>브라우저 실행</item>
+    </string-array>
+    
+    <string-array name="array_scan_status">
+        <item>블루투스를 사용할 수 없습니다. 설정에서 블루투스를 활성화 하세요.</item>
+        <item>스캔중...</item>
+        <item>스캔 완료</item>
+    </string-array>
+    
+    <string-array name="array_scan_interval">
+        <item>1 분</item>
+        <item>5 분</item>
+        <item>10 분</item>
+        <item>20 분</item>
+        <item>30 분</item>
+        <item>40 분</item>
+        <item>50 분</item>
+        <item>1 시간</item>
+    </string-array>
+
+</resources>

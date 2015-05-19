@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Auto Beacon</string>
+    <string name="service_name">Auto Beacon Service</string>
+    <string name="title_section1">Beacon list</string>
+    <string name="title_section2">Macro list</string>
+    <string name="title_section3">Settings</string>
+    <string name="copyrights">HardCopyWorld.com</string>
+    <string name="findmoreat">Find more at hardcopyworld.com</string>
+    
+    <!-- Settings -->
+    <string name="action_settings">App Settings</string>
+    <string name="settings_background_service">Run in background</string>
+    <string name="settings_scan_interval">Scan interval</string>
+    <string name="settings_use_noti">Use notification</string>
+    <string name="settings_email_addr">Email address(Gmail)</string>
+    <string name="settings_email_addr_hint">aaa@gmail.com</string>
+    <string name="settings_email_pw">Email password</string>
+    
+    <!-- UI, Activity, Fragment -->
+    <string name="title_beacon">Beacons</string>
+    <string name="title_macro">Macro</string>
+    <string name="title_ll_settings">Settings</string>
+    
+    <string name="title_scan_classic">Classic Scan</string>
+    <string name="title_scan_ble">BLE Scan</string>
+    
+    <string name="title_make_macro">Make a macro</string>
+    <string name="title_macro_conditions">If...</string>
+    <string name="title_macro_name">Macro name</string>
+    <string name="title_macro_major">Major code</string>
+    <string name="title_macro_minor">Minor code</string>
+    <string name="title_macro_uuid">UUID</string>
+    <string name="title_macro_this_beacon">This beacon is</string>
+    <string name="title_macro_distance">Distance</string>
+    <string name="title_macro_works">Do...</string>
+    <string name="title_macro_work_type">What to do?</string>
+	<string name="title_macro_target">Destination</string>
+    <string name="title_macro_message">Message</string>
+    <string name="title_macro_make">Make</string>
+    <string name="title_macro_edit">Edit</string>
+    <string name="title_macro_options">Macro settings</string>
+    <string name="title_macro_title">Macro name</string>
+    <string name="title_macro_enable">Enabled</string>
+    <string name="title_back_to_list">Back to list</string>
+    <string name="title_beacon_name">Beacon name</string>
+    <string name="title_beacon_already_remembered">*Remembered: </string>
+    
+    <string name="title_spin_title_distance">Select distance</string>
+    <string name="title_spin_title_work">Select what to do</string>
+    
+    <string name="title_stop_alarm">Stop alarm!!</string>
+    
+    <string name="hint_type_email">Type email address</string>
+    <string name="hint_type_number">Type phone number</string>
+    <string name="hint_type_msg_id">Type messenger ID</string>
+    <string name="hint_type_uri">Type homepage URL</string>
+    
+    <string name="uri_prefix">http://</string>
+    
+    <string name="error_type_device">Type UUID or Major/Minor</string>
+    <string name="error_select_distance">Select distance</string>
+    <string name="error_select_what_todo">Select what to do</string>
+    <string name="error_type_destination">Type destination</string>
+    <string name="error_type_message">Type message</string>
+    <string name="error_type_name">Type macro name</string>
+    <string name="error_exit_app">To exit application press BACK key again.</string>
+    
+    <string name="noti_title">Macro worked!</string>
+    
+    
+    <!--  Bluetooth -->
+    <string name="bt_title">Blue Wave</string>
+    
+    <string name="bt_state_init">initializing</string>
+    <string name="bt_state_wait">waiting.. (select a device manually)</string>
+    <string name="bt_state_connect">connecting</string>
+    <string name="bt_state_connected">connected</string>
+    <string name="bt_state_error">error</string>
+    
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Set the bluetooth enable at phone settings.</string>
+    <string name="bt_cmd_sending_error">Transaction failed</string>
+    <string name="bt_ble_not_supported">This device doesn\'t support Bluetooth LE</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scanning for devices...</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- List menu -->
+    <string name="menu_make_macro_with_this">Make a macro using selected beacon</string>
+    <string name="menu_make_macro_with_uuid">Make a macro with selected UUID</string>
+    <string name="menu_make_macro_with_major">Make a macro with selected Major/Minor code</string>
+    <string name="menu_remember_beacon">Remember selected beacon</string>
+    <string name="menu_edit_beacon">Edit beacon info</string>
+    <string name="menu_delete_beacon">Delete</string>
+    <string name="menu_toggle_enabled">Toggle on/off this macro</string>
+    <string name="menu_edit_macro">Edit this macro</string>
+    <string name="menu_delete_macro">Delete this macro</string>
+    
+    <!-- Options Menu -->
+    <string name="scan_beacon">Scan beacons</string>
+    <string name="discoverable">Make\ndiscoverable</string>
+    
+    <!-- Arrays -->
+    <string-array name="array_macro_distance">
+        <item># Select distance condition</item>
+        <item>Not detected</item>
+        <item>Close (less than 0.5m)</item>
+        <item>Near (less than 4m)</item>
+        <item>Far (detectable)</item>
+    </string-array>
+    
+    <string-array name="array_macro_works">
+        <item># Select what to do</item>
+        <item>Send email</item>
+        <item>Send SMS</item>
+        <item>Send Message(Not yet)</item>
+        <item>Vibrate</item>
+        <item>Play rington</item>
+        <item>Notification</item>
+        <item>Set bell mode</item>
+        <item>Set vibration mode</item>
+        <item>Set silent mode</item>
+        <item>Turn on wifi</item>
+        <item>Turn off wifi</item>
+        <item>Launch browser</item>
+    </string-array>
+    
+    <string-array name="array_scan_status">
+        <item>BT is off. Turn on BT!!</item>
+        <item>Scanning...</item>
+        <item>Scan finished.</item>
+    </string-array>
+    
+    <string-array name="array_scan_interval">
+        <item>1 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>30 min</item>
+        <item>40 min</item>
+        <item>50 min</item>
+        <item>1 hour</item>
+    </string-array>
+
+</resources>

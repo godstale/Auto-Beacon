@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <!-- status bar : display connection info -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        style="@style/AppTheme.IntroContainer" >
+
+        <ImageView 
+            android:id="@+id/logo"
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher_white"
+            />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            />
+        
+        <TextView 
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dip"
+            android:text="@string/app_name"
+            style="@style/AppTheme.IntroTextBig" />
+
+        <TextView 
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dip"
+            android:text="@string/copyrights"
+            style="@style/AppTheme.IntroTextSmall" />
+        
+    </LinearLayout>
+    
+</FrameLayout>

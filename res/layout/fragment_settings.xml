@@ -1,0 +1,217 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/AppTheme.FragmentContainer"
+    tools:context=".MainActivity$LLSettingsFragment" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top">
+        
+        <!-- Use notification -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dip"
+            android:gravity="top">
+            <TextView
+                android:id="@+id/text_use_noti"
+                android:layout_width="0dip"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_use_noti"
+                style="@style/AppTheme.FormText" />
+		    <CheckBox 
+		        android:id="@+id/check_use_noti"
+		    	android:layout_width="0dip" 
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="4"
+	    		style="@style/AppTheme.FormEditText" />
+        </LinearLayout>
+        
+        <!-- Run in background -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top">
+            <TextView
+                android:id="@+id/text_background_service"
+                android:layout_width="0dip"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_background_service"
+                style="@style/AppTheme.FormText" />
+		    <CheckBox 
+		        android:id="@+id/check_background_service"
+		    	android:layout_width="0dip" 
+	    		android:layout_height="wrap_content"
+	    		android:layout_weight="4"
+	    		style="@style/AppTheme.FormEditText" />
+        </LinearLayout>
+        
+        <!-- Scan interval -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dip"
+            android:gravity="top">
+            <TextView
+                android:id="@+id/text_scan_interval"
+                android:layout_width="0dip"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_scan_interval"
+                style="@style/AppTheme.FormText" />
+            <Spinner 
+                android:id="@+id/spinner_scan_interval" 
+                android:layout_width="0dip" 
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                style="@style/AppTheme.FormSpinner" />
+        </LinearLayout>
+        
+        <!-- Play ringtone time
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top">
+            <TextView
+                android:id="@+id/text_play_ringtone_time"
+                android:layout_width="0dip"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_play_ringtone_time"
+                style="@style/AppTheme.FormText" />
+            <Spinner 
+                android:id="@+id/spinner_show_indicator" 
+                android:layout_width="0dip" 
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                style="@style/AppTheme.FormSpinner" />
+        </LinearLayout>
+         -->
+         
+        <!-- Vibrate time
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top">
+            <TextView
+                android:id="@+id/text_show_indicator"
+                android:layout_width="0dip"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/title_ll_settings"
+                style="@style/AppTheme.FormText" />
+            <Spinner 
+                android:id="@+id/spinner_show_indicator" 
+                android:layout_width="0dip" 
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                style="@style/AppTheme.FormSpinner" />
+        </LinearLayout>
+         -->
+        
+        <!-- Email addr -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dip"
+            android:gravity="top">
+            <TextView
+                android:id="@+id/text_email_addr"
+                android:layout_width="0dip"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_email_addr"
+                style="@style/AppTheme.FormText" />
+            <EditText 
+                android:id="@+id/edit_email_addr"
+                android:layout_width="0dip" 
+                android:layout_height="wrap_content"
+                android:hint="@string/settings_email_addr_hint"
+                android:layout_weight="4"
+                android:inputType="textEmailAddress"
+                style="@style/AppTheme.FormEditText" />
+        </LinearLayout>
+        <!-- Email password -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top">
+            <TextView
+                android:id="@+id/text_email_pw"
+                android:layout_width="0dip"
+                android:layout_weight="6"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_email_pw"
+                style="@style/AppTheme.FormText" />
+            <EditText 
+                android:id="@+id/edit_email_pw"
+                android:layout_width="0dip" 
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="textPassword"
+                style="@style/AppTheme.FormEditText" />
+        </LinearLayout>
+        
+         
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"
+	        android:paddingTop="60dip"
+	        android:paddingBottom="60dip"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:orientation="vertical" >
+	
+	        <ImageView 
+	            android:id="@+id/logo"
+	            android:layout_width="100dip"
+	            android:layout_height="100dip"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/ic_launcher_blue"
+	            />
+	        
+	        <TextView 
+	            android:id="@+id/app_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="3dip"
+	            android:text="@string/app_name"
+	            android:textColor="@color/blue7"
+	            style="@style/AppTheme.IntroTextBig" />
+	
+	        <TextView 
+	            android:id="@+id/copyright"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="3dip"
+	            android:text="@string/findmoreat"
+	            android:textColor="@color/blue5"
+	            style="@style/AppTheme.IntroTextSmall" />
+	        
+	    </LinearLayout>
+        
+    </LinearLayout>
+    
+	</ScrollView>
+
+</FrameLayout>
